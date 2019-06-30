@@ -29,16 +29,15 @@ Things you may want to cover:
 
 
 
-###users table
+###groups table
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
 
 ### Association
-- has_many :groups, through: :group_users
+- has_many :users, through: :group_users
 - has_many :group_users
 - has_many :massages
-
 
 
 ###messages table
@@ -47,7 +46,7 @@ Things you may want to cover:
 |user|references|foreign_key: true, null: false|
 |group|references|foreign_key: true, null: false|
 |content|text|
-|image|string|
+|image|text|
 
 ### Association
 - belongs_to :user
