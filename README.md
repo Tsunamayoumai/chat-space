@@ -46,6 +46,7 @@ Things you may want to cover:
 |------|----|-------|
 |user|references|foreign_key: true, null: false|
 |group|references|foreign_key: true, null: false|
+|content|text|
 |image|string|
 
 ### Association
